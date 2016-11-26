@@ -101,6 +101,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
     }
     
+    func createPick(forLocation location: CLLocation, withPokemon pokeId: Int){
+        
+        geoFire.setLocation(location, forKey: "\(pokeId)")
+        
+    }
+    
     @IBAction func pokeballPressed(_ sender: AnyObject){
         
         

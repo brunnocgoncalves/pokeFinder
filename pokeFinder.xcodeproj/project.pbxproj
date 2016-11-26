@@ -71,6 +71,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1228F5AE1DE9CD4000E00FF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12D45EB01DE74BF5000B2B1C /* ViewController.swift */,
+				12D45EAE1DE74BF5000B2B1C /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1228F5AF1DE9CD4900E00FF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12D45EB71DE74BF5000B2B1C /* LaunchScreen.storyboard */,
+				12D45EB21DE74BF5000B2B1C /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1228F5B01DE9CD5400E00FF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1228F5B11DE9CD8000E00FF8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12D45EB51DE74BF5000B2B1C /* Assets.xcassets */,
+				12D45EC01DE74C23000B2B1C /* GoogleService-Info.plist */,
+				12D45EBA1DE74BF5000B2B1C /* Info.plist */,
+				1256CFF61DE74EDB004EBB09 /* Header.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		1256CFDD1DE74DE4004EBB09 /* GeoFire */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,15 +166,11 @@
 		12D45EAD1DE74BF5000B2B1C /* pokeFinder */ = {
 			isa = PBXGroup;
 			children = (
+				1228F5B01DE9CD5400E00FF8 /* Model */,
+				1228F5AF1DE9CD4900E00FF8 /* View */,
+				1228F5AE1DE9CD4000E00FF8 /* Controller */,
+				1228F5B11DE9CD8000E00FF8 /* Resources */,
 				1256CFDD1DE74DE4004EBB09 /* GeoFire */,
-				12D45EAE1DE74BF5000B2B1C /* AppDelegate.swift */,
-				12D45EB01DE74BF5000B2B1C /* ViewController.swift */,
-				12D45EB21DE74BF5000B2B1C /* Main.storyboard */,
-				12D45EB51DE74BF5000B2B1C /* Assets.xcassets */,
-				12D45EB71DE74BF5000B2B1C /* LaunchScreen.storyboard */,
-				12D45EC01DE74C23000B2B1C /* GoogleService-Info.plist */,
-				12D45EBA1DE74BF5000B2B1C /* Info.plist */,
-				1256CFF61DE74EDB004EBB09 /* Header.h */,
 			);
 			path = pokeFinder;
 			sourceTree = "<group>";
