@@ -107,8 +107,26 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
     }
     
+    func showPokeOnMap(location: CLLocation){
+        
+        let query = geoFire.query(at: location, withRadius: 2.5)
+        
+        _ = query?.observe(GFEventType.keyEntered, with: { (key, location) in
+            
+            if let key = key, let location = location{
+                
+                let annotation = PokeAnnotation(coordinate: location.coordinate, pokeId: Int(key)!)
+                self.mapView.addAnnotation(annotation)
+                
+            }
+            
+        })
+        
+    }
+    
     @IBAction func pokeballPressed(_ sender: AnyObject){
         
+        let location = CLLocation(latitude: mapView.centerCoordinate.latitude, longitude: mapView.centerCoordinate.longitude)
         
         
     }
