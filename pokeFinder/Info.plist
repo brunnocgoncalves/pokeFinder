@@ -34,5 +34,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location while using the app to be able to save the pokemon spot</string>
 </dict>
 </plist>
